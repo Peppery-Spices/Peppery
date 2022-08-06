@@ -1,0 +1,156 @@
+*{
+    /* this is to include the padding and border in the width and height */
+    box-sizing: border-box;
+}
+    /* it wasnt includid in the * section so it wont override the h1 through h6 properties */
+body{
+    font-family: helvetica, arial;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+                    /* ----------------- */
+                        /* Nav Bar */
+                    /* ----------------- */
+header{
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    /* to make the nav always on top */
+    z-index: 1;
+   /* to make it always on top when scrolling */
+    position: fixed;
+    /* dont know why it was not on the very top and was 8px slided to the right */
+    top: 0;
+    left: 0;
+    /* to make the content in the same line  */
+    display: flex;
+    /* to make the content as far as possible from each other (on on left and other on right) */
+    justify-content: space-between;
+    width: 100%;
+    /* to make the items centerd verticaly on the nav bar */
+    align-items: center;
+    /* to make it solid black  */
+    background-color: black;;
+}
+header img{
+    margin-left: 10px;
+    height: 50px;
+}
+header nav li{
+   /* to make list items in the same line  */
+    display: inline-block;
+   /* to make margin on top and bottom 0 but the margin between the li 10 */
+    margin: 0 10px;
+    
+}
+    /* links properties */
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: seashell;
+  }
+a:hover { 
+    text-decoration: none;
+  }
+ /* to make the main sections under the nav bar at the start of the page */
+main{
+    padding-top: 69px;
+}  
+                    /* ----------------- */
+                     /* Mission section */
+                    /* ----------------- */
+
+#Mission{
+    background-image: url('resources/img/img-mission-background.jpg');
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.75;
+}
+
+.Mission-header{
+    background-color: black;
+    /* to make it on the whole width of the div */
+    width: 100%;
+    /* to make the padding before and after the whole text in the black box  */
+    /* note it is added to the padding in the bellow section so the whole padding is 25px */
+    padding: 15px;
+}
+/* to make the black box as the same size as the writing */
+.mission-header h2,
+.mission-header h4 {
+    margin: 0;
+    /* to make the padding between the writings it self 10px */
+    padding: 10px;
+}
+
+                    /* ----------------- */
+                 /* Featured Tea Seaction */
+                    /* ----------------- */
+
+#Featured-Tea{
+    width: 1000px;
+    margin: auto;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.item img{
+   width: 300px;
+   height: 200px;
+}
+.item h4{
+    margin-top: 10px;
+}
+
+                    /* ----------------- */
+                       /* Locations */
+                    /* ----------------- */
+
+#Locations{
+    background-image: url('resources/img/img-locations-background.jpg');
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.The-Locations{
+    display: flex;
+    gap: 40px;
+}
+.location{
+    background-color: black;
+    width: 300px;
+    opacity: 1;
+}
+
+#Locations h2{
+    margin-bottom: 15px;
+}
+
+                    /* ----------------- */
+                         /* Footer */
+                    /* ----------------- */
+
+#contact{
+    height: 200px;
+}
+#copywrite{
+    text-align: left;
+    margin-left: 20px;
+    /* to override the font size of the main 22px */
+    font-size: 15px;
+}
